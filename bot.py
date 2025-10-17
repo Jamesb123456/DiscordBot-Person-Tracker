@@ -12,7 +12,7 @@ load_dotenv()
 
 # Configuration
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-SERVER_ID = os.getenv('FIVEM_SERVER_ID', 'javxzp')
+SERVER_ID = os.getenv('FIVEM_SERVER_ID')
 UPDATE_CHANNEL_ID = int(os.getenv('UPDATE_CHANNEL_ID', '0'))
 TRACKED_PLAYERS_FILE = 'tracked_players.json'
 

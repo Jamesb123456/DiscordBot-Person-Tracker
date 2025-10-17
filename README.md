@@ -1,6 +1,10 @@
-# FiveM Player Tracker Discord Bot
+# 🎮 FiveM Player Tracker Discord Bot
 
-A Discord bot that tracks and displays real-time player status for a FiveM server using public API data.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Discord.py](https://img.shields.io/badge/discord.py-2.3.0+-blue.svg)](https://github.com/Rapptz/discord.py)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+A Discord bot that tracks and displays real-time player status for FiveM servers using publicly available API data. Monitor your friends' presence with beautiful, auto-updating embeds!
 
 ## Features
 
@@ -59,12 +63,12 @@ pip install -r requirements.txt
 2. Edit `.env` and fill in:
    ```env
    DISCORD_BOT_TOKEN=your_bot_token_here
-   FIVEM_SERVER_ID=javxzp
+   FIVEM_SERVER_ID=your_server_id
    UPDATE_CHANNEL_ID=your_channel_id_here
    ```
 
    - `DISCORD_BOT_TOKEN`: Your bot token from Discord Developer Portal
-   - `FIVEM_SERVER_ID`: The FiveM server ID (default: javxzp)
+   - `FIVEM_SERVER_ID`: Your FiveM server ID (find it in the server URL: servers.fivem.net/servers/detail/YOUR_ID)
    - `UPDATE_CHANNEL_ID`: Right-click a Discord channel → Copy ID (enable Developer Mode in Discord settings)
 
 ### 5. Run the Bot
@@ -135,7 +139,7 @@ Manually trigger an immediate status update (doesn't reset the 5-minute timer).
 
 ### FiveM API not responding
 - The public API might be temporarily down
-- Verify the server ID is correct: https://servers.fivem.net/servers/detail/javxzp
+- Verify the server ID is correct in your `.env` file
 - Check your internet connection
 
 ## File Structure
@@ -169,18 +173,25 @@ Potential features to add:
 - Web dashboard
 - Database storage (SQLite/PostgreSQL)
 
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## License
 
-This project is provided as-is for personal use.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
 For issues or questions:
-1. Check the troubleshooting section above
-2. Verify your `.env` configuration
-3. Check bot console logs for errors
-4. Ensure FiveM server API is accessible
+1. Check the [Troubleshooting](#troubleshooting) section
+2. Review [QUICKSTART.md](QUICKSTART.md) for setup help
+3. Open an [Issue](../../issues) on GitHub
+4. Verify your `.env` configuration
+5. Check bot console logs for errors
 
-## Credits
+## Acknowledgments
 
-Built for tracking players on FiveM servers using public API data.
+- Built with [discord.py](https://github.com/Rapptz/discord.py)
+- Uses FiveM's public server API
+- Inspired by the need to track friends on FiveM servers

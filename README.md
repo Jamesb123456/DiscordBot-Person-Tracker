@@ -10,7 +10,7 @@ A Discord bot that tracks and displays real-time player status for FiveM servers
 
 - 🎮 Real-time player status tracking
 - 🟢 Live online/offline indicators
-- ⏰ Automatic updates every 5 minutes
+- ⏰ Automatic updates every 10 minutes
 - 📝 Easy player management with slash commands
 - 🎨 Beautiful Discord embeds matching your design
 - 💾 Persistent player storage
@@ -80,7 +80,7 @@ python bot.py
 The bot will:
 - Connect to Discord
 - Sync slash commands
-- Start auto-updating every 5 minutes
+- Start auto-updating every 10 minutes
 - Post the player status embed in your configured channel
 
 ## Commands
@@ -110,12 +110,12 @@ Remove a player from tracking.
 Display all currently tracked players with their FiveM names and nicknames.
 
 ### `/refresh`
-Manually trigger an immediate status update (doesn't reset the 5-minute timer).
+Manually trigger an immediate status update (doesn't reset the 10-minute timer).
 
 ## How It Works
 
 1. **Player Storage**: Tracked players are stored in `tracked_players.json`
-2. **API Polling**: Every 5 minutes, the bot fetches current players from FiveM's public API
+2. **API Polling**: Every 10 minutes, the bot fetches current players from FiveM's public API
 3. **Status Matching**: Compares tracked players with online players (case-insensitive)
 4. **Embed Update**: Updates the Discord message with current online/offline status
 5. **Persistent Message**: Edits the same message instead of spamming new ones

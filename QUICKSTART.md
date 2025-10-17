@@ -36,7 +36,7 @@ In Discord, use the `/set` command:
 /set "Wu Jackson" "Wu Jackson"
 ```
 
-Done! The bot will now update every 5 minutes. ✅
+Done! The bot will now update every 10 minutes. ✅
 
 ## 📝 Command Cheat Sheet
 
@@ -77,7 +77,7 @@ Done! The bot will now update every 5 minutes. ✅
    ```
 
 3. **Monitor**
-   - Bot automatically updates every 5 minutes
+   - Bot automatically updates every 10 minutes
    - Check the status channel for live updates
 
 4. **Manage Players**

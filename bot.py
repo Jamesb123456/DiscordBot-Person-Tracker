@@ -136,9 +136,9 @@ def create_status_embed(online_players):
     return embed
 
 
-@tasks.loop(minutes=10)
+@tasks.loop(minutes=5)
 async def update_status():
-    """Update player status every 10 minutes"""
+    """Update player status every 5 minutes"""
     global last_message_id
     
     if UPDATE_CHANNEL_ID == 0:
